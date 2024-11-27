@@ -28,8 +28,8 @@ const Hero = () => {
 							className="cursor-pointer">
 							<Button icon={logo}>Try it Now</Button>
 						</Link>
-						<div className="absolute top-[20rem] left-[10rem] md:top-[2rem] md:left-[30rem] w-[1230px] md:w-[1230px] pointer-events-none z-[-1] ">
-							<img src={hero} className=" max-lg:h-auto shadow-glow" alt="hero" />
+						<div className="absolute top-[20rem] left-[10rem] md:top-[2rem] md:left-[30rem] w-[1230px] h-[1230px] md:w-[1230px] pointer-events-none z-[-1] shadow-glow rounded-full">
+							<img src={hero} className=" max-lg:h-auto " alt="hero" />
 						</div>
 					</div>
 				</div>
