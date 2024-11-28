@@ -1,4 +1,12 @@
-import { FAQ, Features, Header, Hero, Pricing, Testimonials } from "./sections";
+import {
+	Download,
+	FAQ,
+	Features,
+	Header,
+	Hero,
+	Pricing,
+	Testimonials,
+} from "./sections";
 function App() {
 	return (
 		<main className="overflow-hidden  w-full  font-sans ">
@@ -7,7 +15,8 @@ function App() {
 			<Features />
 			<Pricing />
 			<FAQ />
-			<Testimonials/>
+			<Testimonials />
+			<Download />
 		</main>
 	);
 }

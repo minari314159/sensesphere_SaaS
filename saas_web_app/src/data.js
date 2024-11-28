@@ -8,9 +8,20 @@ import {
 	GiGreenPower,
 } from "react-icons/gi";
 import { LuHexagon, LuTriangle, LuCircle } from "react-icons/lu";
+import { FaAndroid, FaAppStoreIos, FaWindows } from "react-icons/fa6";
 import { WiDaySnowThunderstorm } from "react-icons/wi";
+import { MdOutlineWeb } from "react-icons/md";
 
-import { alicia, becky, jim, magict, melanie, plan_1, plan_2, plan_3 } from "./assets";
+import {
+	alicia,
+	becky,
+	jim,
+	magict,
+	melanie,
+	plan_1,
+	plan_2,
+	plan_3,
+} from "./assets";
 export const features = [
 	{
 		id: 0,
@@ -224,5 +235,70 @@ export const faq = [
 		question: "I’m locked out of my account what do I do?",
 		answer:
 			"Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+	},
+];
+
+export const logos = [
+	{
+		id: "0",
+		title: "Afterpay",
+		url: "/images/logos/afterpay.svg",
+		width: 156,
+		height: 48,
+	},
+	{
+		id: "1",
+		title: "Amplitude",
+		url: "/images/logos/amplitude.svg",
+		width: 194,
+		height: 48,
+	},
+	{
+		id: "2",
+		title: "Sonos",
+		url: "/images/logos/sonos.svg",
+		width: 115,
+		height: 48,
+	},
+	{
+		id: "3",
+		title: "Maze",
+		url: "/images/logos/maze.svg",
+		width: 142,
+		height: 48,
+	},
+	{
+		id: "4",
+		title: "Drips",
+		url: "/images/logos/drips.svg",
+		width: 77,
+		height: 48,
+	},
+];
+
+export const links = [
+	{
+		id: "0",
+		title: "Ios",
+		icon: FaAppStoreIos,
+		url: "#",
+	},
+	{
+		id: "1",
+		title: "Android",
+		icon: FaAndroid,
+		url: "#",
+	},
+	{
+		id: "2",
+		title: "Windows",
+		icon: FaWindows,
+		url: "#",
+	},
+	{
+		id: "3",
+		title: "Web",
+		icon: MdOutlineWeb,
+		url: "#",
 	},
 ];
