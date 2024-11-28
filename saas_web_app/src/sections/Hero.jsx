@@ -20,16 +20,11 @@ const Hero = () => {
 							automated systems, and cloud analytics to revolutionize landscape
 							design and maintenance.
 						</p>
-						<Link
-							to="features"
-							offset={-100}
-							spy
-							smooth
-							className="cursor-pointer ">
+						<Link to="features" offset={-100} spy smooth>
 							<Button icon={zap}>Try it Now</Button>
 						</Link>
-						<div className="absolute top-[20rem] left-[10rem] md:top-[2rem] md:left-[30rem] w-[1230px] h-[1230px] md:w-[1230px] pointer-events-none z-[-1] shadow-glow rounded-full">
-							<img src={hero} className=" max-lg:h-auto " alt="hero" />
+						<div className="absolute top-[20rem] left-[10rem] md:top-[2rem] md:left-[30rem] w-[1230px] h-[1230px] md:w-[1230px] pointer-events-none z-[-5] shadow-glow rounded-full">
+							<img src={hero} className=" w-[600px] " alt="hero" />
 						</div>
 					</div>
 				</div>
