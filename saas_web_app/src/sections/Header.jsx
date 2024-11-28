@@ -1,19 +1,38 @@
 import { Link } from "react-scroll";
 import NavLink from "./NavLink";
 import { magic, close, logo } from "../assets";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [hasScrolled, setHasScrolled] = useState(false);
+	useEffect(() => {
+		const handleScroll = () => {
+			setHasScrolled(window.scrollY > 32);
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 	return (
-		<header className="fixed top-0 left-0 z-50  py-10  w-full">
+		<header
+			className={`fixed top-0 left-0 z-50 py-10 w-full ${
+				hasScrolled &&
+				" bg-s1/50 py-5 backdrop-blur-[8px] transition-all duration-500"
+			}`}>
 			<div className="container flex h-14 items-center max-lg:px-5">
-				<a className="lg:hidden cursor-pointer z-2 flex-1 flex items-center gap-3 ">
+				<Link
+					to="hero"
+					offset={-250}
+					spy
+					smooth
+					className="lg:hidden cursor-pointer z-2 flex-1 flex items-center gap-3 ">
 					<img src={logo} width={40} height={40} alt="logo" />
 					<h1 className="text-neutral-light font-bold text-[1.5rem]">
 						SenseSphere
 					</h1>
-				</a>
+				</Link>
 				<div
 					className={`w-full max-lg:fixed max-lg:top-0 max-lg:w-full max-lg:bg-s2  ${
 						isOpen ? "max-lg:opacity-100" : "max-lg:opacity-0"
@@ -22,7 +41,7 @@ const Header = () => {
 						<nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
 							<ul className="flex max-lg:block max-lg:px-12">
 								<li className="nav-li">
-									<NavLink title="Features" />
+									<NavLink title="Features" isOpen={setIsOpen} />
 									<div className="dot" />
 									<NavLink title="Pricing" />
 									<div className="dot" />
@@ -30,7 +49,7 @@ const Header = () => {
 								<li className="nav-logo">
 									<Link
 										to="hero"
-										offset={-100}
+										offset={-250}
 										spy
 										smooth
 										className={`flex items-center gap-3 max-lg:hidden transition-transform duration-500 cursor-pointer`}>

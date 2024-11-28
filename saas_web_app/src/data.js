@@ -1,4 +1,14 @@
-import { GiAbstract013, GiAbstract030, GiAbstract098, GiAbstract099 } from "react-icons/gi";
+import {
+	GiAbstract013,
+	GiAbstract030,
+	GiAbstract099,
+	GiModernCity,
+	GiGreenhouse,
+	GiParkBench,
+	GiGreenPower,
+} from "react-icons/gi";
+import { WiDaySnowThunderstorm } from "react-icons/wi";
+
 import { magict } from "./assets";
 export const features = [
 	{
@@ -20,7 +30,7 @@ export const features = [
 		title: "Interactive Dashboards",
 		button: {
 			icon: magict,
-			title: "Watch demo",
+			title: "Read the docs",
 		},
 	},
 	{
@@ -31,18 +41,41 @@ export const features = [
 		title: "Biodiversity Support",
 		button: {
 			icon: magict,
-			title: "Watch demo",
+			title: "Read the docs",
 		},
 	},
 	{
 		id: 3,
-		icon: GiAbstract098,
+		icon: WiDaySnowThunderstorm,
 		caption:
 			"Sends alerts for conditions like drought stress, pest activity, or hazardous weather, enabling proactive care for landscapes.",
-		title: "Dynamic Ecosystem Alerts",
+		title: "Ecosystem Alerts",
 		button: {
 			icon: magict,
 			title: "Watch demo",
 		},
+	},
+];
+
+export const details = [
+	{
+		id: "0",
+		icon: GiParkBench,
+		title: "Urban Parks",
+	},
+	{
+		id: "1",
+		icon: GiGreenhouse,
+		title: "Green Roofs",
+	},
+	{
+		id: "2",
+		icon: GiGreenPower,
+		title: "Residential Landscapes",
+	},
+	{
+		id: "3",
+		icon: GiModernCity,
+		title: "Smart Cities",
 	},
 ];
