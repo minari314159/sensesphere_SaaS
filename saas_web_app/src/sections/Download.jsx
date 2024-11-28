@@ -11,13 +11,11 @@ const Download = () => {
 				<div className="container">
 					<div className="flex items-center">
 						<div className="relative mr-6 flex-540 max-xl:flex-280 max-lg:flex256 max-md:flex-100">
-							<div className="mb-10">
-								<img
-									src={logo}
-									width={160}
-									height={55}
-									alt="xora"
-								/>
+							<div className="mb-10 flex items-center">
+								<img src={logo} width={160} height={55} alt="xora" />
+								<h1 className="text-neutral-light font-bold text-[2rem]">
+									SenseSphere
+								</h1>
 							</div>
 
 							<p className="body-1 mb-10 max-w-md">
@@ -36,7 +34,7 @@ const Download = () => {
 												href={url}
 												className="size-22 download_tech-icon_before relative flex items-center justify-center rounded-half border-2 border-s3 bg-s1 transition-borderColor duration-500">
 												<span className="download_tech-icon">
-													<Icon size={35} className="text-p3"/>
+													<Icon size={35} className="text-p3" />
 												</span>
 											</a>
 										</li>
