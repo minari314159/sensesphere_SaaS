@@ -10,7 +10,7 @@ import {
 import { LuHexagon, LuTriangle, LuCircle } from "react-icons/lu";
 import { WiDaySnowThunderstorm } from "react-icons/wi";
 
-import { magict, plan_1, plan_2, plan_3 } from "./assets";
+import { alicia, becky, jim, magict, melanie, plan_1, plan_2, plan_3 } from "./assets";
 export const features = [
 	{
 		id: 0,
@@ -132,49 +132,33 @@ export const plans = [
 export const testimonials = [
 	{
 		id: "0",
-		name: "Jessica Saunders",
-		role: "Globalnomads",
-		avatarUrl: "/images/testimonials/jessica-saunders.png",
-		comment:
-			"Xora's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
-	},
-	{
-		id: "1",
-		name: "Mark Erixon",
-		role: "Vid capital intl",
-		avatarUrl: "/images/testimonials/mark-erixon.png",
-		comment:
-			"I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
-	},
-	{
-		id: "2",
 		name: "Melanie Hurst",
 		role: "Cyberleap",
-		avatarUrl: "/images/testimonials/melanie-hurst.png",
+		avatarUrl: melanie,
 		comment:
 			"Adopting this software was a breeze. It's made everyday tasks so much simpler.",
 	},
 	{
-		id: "3",
+		id: "1",
 		name: "Alicia Barker",
 		role: "Cyberleap",
-		avatarUrl: "/images/testimonials/alicia-barker.png",
+		avatarUrl: alicia,
 		comment:
 			"The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
 	},
 	{
-		id: "4",
+		id: "2",
 		name: "Becky Snider",
 		role: "Floclips",
-		avatarUrl: "/images/testimonials/becky-snider.png",
+		avatarUrl: becky,
 		comment:
-			"Switched to Xora last month, and I'm already seeing results. Best decision for our team!",
+			"Switched to SenseSphere last month, and I'm already seeing results. Best decision for our team!",
 	},
 	{
-		id: "5",
+		id: "3",
 		name: "Jim Bradley",
 		role: "Vid capital intl",
-		avatarUrl: "/images/testimonials/jim-bradley.png",
+		avatarUrl: jim,
 		comment:
 			"The efficiency boost is undeniable. This platform has transformed our workflow, forever.",
 	},
@@ -183,13 +167,13 @@ export const testimonials = [
 export const faq = [
 	{
 		id: "0",
-		question: "How easy is it to setup Xora?",
+		question: "Is it easy to setup SenseSphere?",
 		answer:
 			"Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
 	},
 	{
 		id: "1",
-		question: "Can I integrate Xora with other platforms?",
+		question: "Can I integrate SenseSphere with other platforms?",
 		answer:
 			"Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
 	},
