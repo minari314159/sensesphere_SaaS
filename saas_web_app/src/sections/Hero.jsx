@@ -1,6 +1,6 @@
 import { Element, Link } from "react-scroll";
 import { Button } from "../components";
-import { logo, hero } from "../assets";
+import { hero, zap } from "../assets";
 
 const Hero = () => {
 	return (
@@ -8,9 +8,9 @@ const Hero = () => {
 			<Element name="hero">
 				<div className="container">
 					<div className="relative z-2 max-w-512 max-lg:max-w-388">
-						<div className="caption small-2 uppercase text-p3">
+						<p className="caption small-2 uppercase text-p3">
 							IoT for Smarter Landscape Design
-						</div>
+						</p>
 						<h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
 							Sustainable, efficient & responsive
 						</h1>
@@ -25,8 +25,8 @@ const Hero = () => {
 							offset={-100}
 							spy
 							smooth
-							className="cursor-pointer">
-							<Button icon={logo}>Try it Now</Button>
+							className="cursor-pointer ">
+							<Button icon={zap}>Try it Now</Button>
 						</Link>
 						<div className="absolute top-[20rem] left-[10rem] md:top-[2rem] md:left-[30rem] w-[1230px] h-[1230px] md:w-[1230px] pointer-events-none z-[-1] shadow-glow rounded-full">
 							<img src={hero} className=" max-lg:h-auto " alt="hero" />
