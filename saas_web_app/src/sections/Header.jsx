@@ -34,7 +34,7 @@ const Header = () => {
 					className={`sidebar transition-transform duration-500  ${
 						isOpen
 							? "max-lg:translate-x-[-1rem]"
-							: "max-lg:translate-x-0 hidden"
+							: "max-lg:translate-x-0 max-lg:hidden"
 					}`}>
 					<div className="max-lg:relative max-lg:flex max-lg:flex-col max-lg:min-h-screen max-lg:p-6 max-lg:overflow-hidden sidebar-before max-md:px-4">
 						<nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">

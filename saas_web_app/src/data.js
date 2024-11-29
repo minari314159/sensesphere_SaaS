@@ -183,21 +183,22 @@ export const testimonials = [
 export const faq = [
 	{
 		id: "0",
-		question: "Is it easy to setup SenseSphere?",
+		question: "Can SenseSphere help with sustainability goals",
 		answer:
-			"Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+			"Absolutely! Drives eco-friendly practices by minimizing water and energy consumption.",
 	},
 	{
 		id: "1",
 		question: "Can I integrate SenseSphere with other platforms?",
 		answer:
-			"Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+			"Absolutely! Not only that, you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
 	},
 	{
 		id: "2",
-		question: "How often do you add new content?",
+		question:
+			"How exactly does SenseSphere help with landscapre architecture practices?",
 		answer:
-			"Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+			"SenseSphere is data-driven, empowering architects and managers with actionable insights to make informed decisions. Not only that it reduces labour and maintanance costs through automation and predictive insights.Lastly, it ensures landscapes are not only beautiful but also functional and responsive to environmental needs",
 	},
 	{
 		id: "3",
