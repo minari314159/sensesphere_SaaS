@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import { links, logos } from "../data.js";
-import { logo } from "../assets/index.js";
+import { logo, screen } from "../assets/index.js";
 
 const Download = () => {
 	return (
@@ -20,7 +20,7 @@ const Download = () => {
 
 							<p className="body-1 mb-10 max-w-md">
 								Try it now for free on iOS, Android, PC, Web - whatever your
-								flavor, we&apos;ve got you covered.
+								flavour, we&apos;ve got you covered.
 							</p>
 
 							<ul className="flex flex-wrap items-center gap-6">
@@ -51,7 +51,7 @@ const Download = () => {
 									<span className="download_preview-dot left-16 bg-p1/15" />
 
 									<img
-										src="/images/screen.jpg"
+										src={screen}
 										width={855}
 										height={655}
 										alt="screen"

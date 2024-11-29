@@ -11,6 +11,12 @@ import jim from "./testimonials/jim-bradley.png";
 import melanie from "./testimonials/melanie-hurst.png";
 import becky from "./testimonials/becky-snider.png";
 import alicia from "./testimonials/alicia-barker.png";
+import screen from "./screen.jpg";
+import afterpay from "./logos/afterpay.svg";
+import amplitude from "./logos/amplitude.svg";
+import sonos from "./logos/sonos.svg";
+import maze from "./logos/maze.svg";
+import drips from "./logos/drips.svg";
 
 export {
 	magic,
@@ -26,4 +32,10 @@ export {
 	melanie,
 	becky,
 	alicia,
+	screen,
+	afterpay,
+	amplitude,
+	sonos,
+	maze,
+	drips,
 };

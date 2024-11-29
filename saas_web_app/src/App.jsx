@@ -2,6 +2,7 @@ import {
 	Download,
 	FAQ,
 	Features,
+	Footer,
 	Header,
 	Hero,
 	Pricing,
@@ -17,6 +18,7 @@ function App() {
 			<FAQ />
 			<Testimonials />
 			<Download />
+			<Footer />
 		</main>
 	);
 }

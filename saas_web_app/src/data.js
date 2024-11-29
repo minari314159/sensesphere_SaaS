@@ -13,14 +13,19 @@ import { WiDaySnowThunderstorm } from "react-icons/wi";
 import { MdOutlineWeb } from "react-icons/md";
 
 import {
+	afterpay,
 	alicia,
+	amplitude,
 	becky,
+	drips,
 	jim,
 	magict,
+	maze,
 	melanie,
 	plan_1,
 	plan_2,
 	plan_3,
+	sonos,
 } from "./assets";
 export const features = [
 	{
@@ -242,35 +247,35 @@ export const logos = [
 	{
 		id: "0",
 		title: "Afterpay",
-		url: "/images/logos/afterpay.svg",
+		url: afterpay,
 		width: 156,
 		height: 48,
 	},
 	{
 		id: "1",
 		title: "Amplitude",
-		url: "/images/logos/amplitude.svg",
+		url: amplitude,
 		width: 194,
 		height: 48,
 	},
 	{
 		id: "2",
 		title: "Sonos",
-		url: "/images/logos/sonos.svg",
+		url: sonos,
 		width: 115,
 		height: 48,
 	},
 	{
 		id: "3",
 		title: "Maze",
-		url: "/images/logos/maze.svg",
+		url: maze,
 		width: 142,
 		height: 48,
 	},
 	{
 		id: "4",
 		title: "Drips",
-		url: "/images/logos/drips.svg",
+		url: drips,
 		width: 77,
 		height: 48,
 	},

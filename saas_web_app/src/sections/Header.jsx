@@ -43,7 +43,7 @@ const Header = () => {
 								<li className="nav-li">
 									<NavLink title="Features" isOpen={setIsOpen} />
 									<div className="dot" />
-									<NavLink title="Pricing" />
+									<NavLink title="Pricing" isOpen={setIsOpen} />
 									<div className="dot" />
 								</li>
 								<li className="nav-logo">
@@ -60,9 +60,9 @@ const Header = () => {
 									</Link>
 								</li>
 								<li className="nav-li">
-									<NavLink title="FAQ" />
+									<NavLink title="FAQ" isOpen={setIsOpen} />
 									<div className="dot" />
-									<NavLink title="Download" />
+									<NavLink title="Download" isOpen={setIsOpen} />
 									<div className="dot" />
 								</li>
 							</ul>
