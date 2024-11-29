@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { LinkScroll } from "../components";
 import NavLink from "./NavLink";
 import { magic, close, logo } from "../assets";
 import { useEffect, useState } from "react";
@@ -21,18 +21,15 @@ const Header = () => {
 				hasScrolled &&
 				" bg-s1/50 py-5 backdrop-blur-[8px] transition-all duration-500"
 			}`}>
-			<div className="container flex h-14 items-center max-lg:px-5">
-				<Link
-					to="hero"
-					offset={-250}
-					spy
-					smooth
-					className="lg:hidden cursor-pointer z-2 flex-1 flex items-center gap-3 ">
-					<img src={logo} width={40} height={40} alt="logo" />
-					<h1 className="text-neutral-light font-bold text-[1.5rem]">
-						SenseSphere
-					</h1>
-				</Link>
+			<div className="container flex h-14 items-center justify-between max-lg:px-5">
+				<LinkScroll to="hero" offset={-250}>
+					<div className="lg:hidden cursor-pointer  flex-1 flex flex-row items-center justify-start gap-2 w-fit">
+						<img src={logo} width={40} height={40} alt="logo" />
+						<h1 className="text-neutral-light font-bold text-[1.3rem]">
+							SenseSphere
+						</h1>
+					</div>
+				</LinkScroll>
 				<div
 					className={`w-full max-lg:fixed max-lg:top-0 max-lg:w-full max-lg:bg-s2  ${
 						isOpen ? "max-lg:opacity-100" : "max-lg:opacity-0"
@@ -47,17 +44,15 @@ const Header = () => {
 									<div className="dot" />
 								</li>
 								<li className="nav-logo">
-									<Link
-										to="hero"
-										offset={-250}
-										spy
-										smooth
-										className={`flex items-center gap-3 max-lg:hidden transition-transform duration-500 cursor-pointer`}>
-										<img src={logo} width={40} height={40} alt="logo" />
-										<h1 className="text-neutral-light font-bold text-[1.5rem]">
-											SenseSphere
-										</h1>
-									</Link>
+									<LinkScroll to="hero" offset={-250}>
+										<div
+											className={`flex items-center gap-3 max-lg:hidden transition-transform duration-500 cursor-pointer`}>
+											<img src={logo} width={40} height={40} alt="logo" />
+											<h1 className="text-neutral-light font-bold text-[1.5rem]">
+												SenseSphere
+											</h1>
+										</div>
+									</LinkScroll>
 								</li>
 								<li className="nav-li">
 									<NavLink title="FAQ" isOpen={setIsOpen} />

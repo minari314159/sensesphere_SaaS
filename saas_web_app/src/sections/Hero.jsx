@@ -1,11 +1,11 @@
-import { Element, Link } from "react-scroll";
+
 import { Button } from "../components";
 import { hero, zap } from "../assets";
 
 const Hero = () => {
 	return (
-		<section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
-			<Element name="hero">
+		<section id="hero" className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
+			
 				<div className="container">
 					<div className="relative z-2 max-w-512 max-lg:max-w-388">
 						<p className="caption small-2 uppercase text-p3">
@@ -20,15 +20,17 @@ const Hero = () => {
 							automated systems, and cloud analytics to revolutionize landscape
 							design and maintenance.
 						</p>
-						<Link to="features" offset={-100} spy smooth>
-							<Button icon={zap}>Try it Now</Button>
-						</Link>
+
+						<Button icon={zap} to="features">
+							Try it Now
+						</Button>
+
 						<div className="absolute top-[20rem] left-[10rem] md:top-[2rem] md:left-[30rem] w-[1230px] h-[1230px] md:w-[1230px] pointer-events-none z-[-5] shadow-glow rounded-full">
 							<img src={hero} className=" w-[600px] " alt="hero" />
 						</div>
 					</div>
 				</div>
-			</Element>
+			
 		</section>
 	);
 };
