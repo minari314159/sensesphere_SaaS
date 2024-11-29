@@ -34,7 +34,7 @@ const Pricing = () => {
 						/>
 					</div>
 				</div>
-				<div className="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6">
+				<div className=" relative z-2 -mt-12 flex items-start max-xl:gap-3 max-xl:overflow-x-scroll max-xl:pt-6">
 					{plans.map((plan, index) => {
 						const Icon = plan.icon;
 						return (

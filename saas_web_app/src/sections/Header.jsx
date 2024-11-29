@@ -31,13 +31,16 @@ const Header = () => {
 					</div>
 				</LinkScroll>
 				<div
-					className={`sidebar transition-transform duration-500 ${
-						isOpen ? "max-lg:translate-x-1" : "max-lg:translate-x-0 hidden"
+					className={`sidebar transition-transform duration-500  ${
+						isOpen
+							? "max-lg:translate-x-[-1rem]"
+							: "max-lg:translate-x-0 hidden"
 					}`}>
-					<div className=" max-lg:relative max-lg:flex max-lg:flex-col max-lg:min-h-screen max-lg:p-6 max-lg:overflow-hidden sidebar-before max-md:px-4 ">
+					<div className="max-lg:relative max-lg:flex max-lg:flex-col max-lg:min-h-screen max-lg:p-6 max-lg:overflow-hidden sidebar-before max-md:px-4">
 						<nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
 							<ul className="flex max-lg:block max-lg:px-12">
 								<li className="nav-li">
+									<div className="dot" />
 									<NavLink title="Features" isOpen={setIsOpen} />
 									<div className="dot" />
 									<NavLink title="Pricing" isOpen={setIsOpen} />
